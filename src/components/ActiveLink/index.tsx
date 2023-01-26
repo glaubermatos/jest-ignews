@@ -1,6 +1,6 @@
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
 import Link, { LinkProps } from 'next/link'
-import React, { Children, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 
 interface ActiveLinkProps extends LinkProps {
     activeClassName: string;
