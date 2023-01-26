@@ -2,13 +2,9 @@ import { signIn, useSession } from 'next-auth/client'
 import getStripeJS from '../../services/stripe-js'
 import { api } from '../../services/api'
 import styles from './styles.module.scss'
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
 
-interface SubscribeButtonProps {
-    priceId: string
-}
-
-export function SubscribeButton({priceId}: SubscribeButtonProps) {
+export function SubscribeButton() {
     const router = useRouter()
 
     //tem acesso a sessão do usuário
@@ -20,7 +16,7 @@ export function SubscribeButton({priceId}: SubscribeButtonProps) {
             return;
         }
 
-        console.log(session)
+        // console.log(session)
 
         if (session.activeSubscription) {
             router.push('/posts')
