@@ -37,6 +37,7 @@
     "jest-dom": "^4.0.0",
     "jest-environment-jsdom": "^29.4.0",
     "jest-mock": "^29.4.0",
+    "next-router-mock": "^0.9.1",
     "prismic-dom": "^2.2.6",
     "sass": "^1.43.4",
     "ts-jest": "^29.0.5",
